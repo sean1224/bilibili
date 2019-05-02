@@ -1,0 +1,8 @@
+<view class="container">
+    <text class='iconfont iconbilibilidonghua'></text>
+    <view class="search">
+        <input type="text" />
+        <i class='iconfont iconsousuo'></i>
+    </view>
+    <text class="iconfont icontouxiang"></text>
+</view>

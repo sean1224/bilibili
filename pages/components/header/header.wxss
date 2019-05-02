@@ -1,0 +1,38 @@
+@import"../../../static/styles/iconfont.wxss";
+
+.container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.container .iconbilibilidonghua{
+    flex:1rpx;
+    color:rgb(244, 90, 141);
+    font-size: 55rpx;
+}
+.container .search{
+    position: relative;
+    flex:2;
+    font-size:55rpx;
+    color:#bbb;
+    box-sizing: border-box;
+    text-align: center;
+}
+.search .iconsousuo{
+    position: absolute;
+    left: 25rpx;
+    top: 10rpx;
+}
+.search input {
+    width: 100%;
+    border:solid 1px #eee;
+    border-radius:35rpx;
+    font-size:25rpx;
+}
+.container .icontouxiang{
+    flex: 1rpx;
+    color:rgb(244, 90, 141);
+    font-size: 35rpx;
+}

@@ -8,7 +8,6 @@
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "Bilibili",
     "backgroundColor": "#eee",
-    "backgroundTextStyle": "light",
-    "enablePullDownRefresh":true
+    "backgroundTextStyle": "light"
   }
 }
