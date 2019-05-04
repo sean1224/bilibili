@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "header":"../components/header/header",
-    "ImgSwiper": "../components/imgswiper/ImgSwiper"
+    "navlist": "../components/navlist/navlist",
+    "swiperlist": "../components/swiperlist/swiperlist"
   }
 }

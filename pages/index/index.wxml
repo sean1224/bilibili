@@ -1,5 +1,35 @@
 <!-- 表头部分 -->
 <header></header>
+<!-- 导航条 -->
+<navlist nav='{{navList}}'></navlist>
 <!-- 轮播图 -->
-<!-- <ImgSwiper></ImgSwiper> -->
-<text wx-for='navList' wx-key='index'></text>
+<swiperlist list='{{swiperList}}'></swiperlist>
+<!-- 视频列表 -->
+<view class="container">
+  <navigator 
+     wx:for='{{videosList}}'
+     wx:key='{{index}}'
+     url='../detail/detail?id={{item.id}}'
+     open-type='navigate'>
+    <view class='content'>
+      <view class="content-pic">
+        <image mode='widthFix' src='{{item.imgSrc}}'></image>
+        <view class="content-pic-des">
+          <view class="pic-des-l">
+            <text class='iconfont iconbofang'></text>
+            <text>{{item.playCount}}</text>
+          </view>
+          <view class="pic-des-r">
+            <text class='iconfont iconxiaoxi'></text>
+            <text>{{item.commentCount}}</text>
+          </view>
+        </view>
+      </view> 
+      <view class="content-des">
+        <text>
+          {{item.desc}}
+        </text>
+      </view>
+    </view>    
+  </navigator> 
+</view>

@@ -1,0 +1,34 @@
+<header></header>
+<view class="container">
+  <!-- 视频区域 -->
+  <video src="http://192.168.1.107/video/1.mp4" 
+        controls
+        bindprogress='bindprogress'></video>
+  <view class="video-des">
+    <view class="des-title">{{videoDetail.videoTitle}}</view>
+    <view class="des-other">
+      <view class="other-author">{{videoDetail.author}}</view>
+      <view class="other-cishu">{{videoDetail.playCount}}</view>
+      <view class="other-danmu">{{videoDetail.commentCount}}</view>
+      <view class="other-riqi">{{videoDetail.date}}</view>
+    </view>
+  </view>
+  <!-- 视频推荐内容 -->
+  <view class='recommend' wx:for='{{othersList}}' wx:key='{{index}}'>
+    <view class="recommend-video">
+      <image  mode='widthFix' src='{{item.imgSrc}}'></image>
+    </view>
+    <view class="recommend-des">
+      <text class="des-title">{{item.title}}</text>
+      <view class="des-other">
+        <text class="other-cishu">{{item.playMsg}}次观看</text>
+        <text class="other-danmu">{{item.commentCount}}弹幕</text>
+      </view>
+    </view>
+  </view>   
+  <!-- 视频评论 -->
+  <view class="comment">
+    
+  </view>
+</view>
+

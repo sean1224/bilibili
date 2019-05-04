@@ -1,9 +1,10 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
+    "pages/detail/detail",
     "pages/logs/logs"
   ],
-  "window":{
+  "window": {
     "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "Bilibili",

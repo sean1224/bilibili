@@ -1,5 +1,4 @@
 @import"../../../static/styles/iconfont.wxss";
-
 .container{
     display: flex;
     flex-flow: row nowrap;
