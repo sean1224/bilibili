@@ -32,6 +32,7 @@
   display: flex;
   flex-flow:row nowrap;
   justify-content: space-around;
+  padding-bottom: 30px;
   align-items: center;
 }
 /* .recommend .recommend-video{
@@ -52,4 +53,42 @@
 }
 .recommend-des .des-other{
   font-size:20rpx;
+}
+/* 评论部分 */
+.container .comment{
+  font-size:30rpx;
+  padding: 10px;
+}
+.comment .comment-item{
+  display: flex;
+  flex-flow:row nowrap;
+  justify-content: space-around;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+}
+.comment-item .item-icon{
+  align-self:center;
+}
+.comment-item .item-icon image{
+  width: 60px;
+  height: 60px;
+}
+.comment-item .item-detail{
+  flex:1;
+}
+.item-detail .item-detail-top{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  font-size:20rpx;
+}
+.item-detail .item-detail-bottom{
+  padding: 10px;
+  font-size:25rpx;
+  text-indent: 10px;
+}
+/* 全局部分 */
+.border-bottom{
+  border-bottom: 1px solid #eee;
 }

@@ -1,7 +1,7 @@
 <header></header>
 <view class="container">
   <!-- 视频区域 -->
-  <video src="http://192.168.1.107/video/1.mp4" 
+  <video src="http://172.17.2.48/video/1.mp4" 
         controls
         bindprogress='bindprogress'></video>
   <view class="video-des">
@@ -28,7 +28,21 @@
   </view>   
   <!-- 视频评论 -->
   <view class="comment">
-    
+    <view>评论({{commentData.commentTotalCount}})</view>
+    <view class="comment-item border-bottom" wx:for='{{commentData.commentList}}' wx:key='{{index}}'> 
+      <view class="item-icon">
+        <image mode="widthFix"  src="{{item.userIconSrc}}"></image>
+      </view>
+      <view class="item-detail">
+        <view class="item-detail-top">
+          <text>{{item.username}}</text>
+          <text>{{item.commentDate}}</text>
+        </view>  
+        <view class="item-detail-bottom">
+          <text>{{item.commentInfo}}</text>
+        </view> 
+      </view>
+    </view>
   </view>
 </view>
 
